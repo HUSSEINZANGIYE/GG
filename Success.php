@@ -1,7 +1,5 @@
 <?php 
- 
  $ID = file_get_contents("ID.txt");
- 
  ?>
 
 <!DOCTYPE html>
