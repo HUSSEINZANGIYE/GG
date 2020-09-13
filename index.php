@@ -1,4 +1,3 @@
-﻿
 <?php 
 include"info.php";
 //CODED BY Geladiator_phishing
